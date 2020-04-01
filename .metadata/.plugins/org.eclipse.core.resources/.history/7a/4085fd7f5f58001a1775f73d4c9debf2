@@ -1,0 +1,7 @@
+package com.tj.ex.controller;
+
+import javax.servlet.http.HttpServlet;
+
+public class BController extends HttpServlet {
+
+}

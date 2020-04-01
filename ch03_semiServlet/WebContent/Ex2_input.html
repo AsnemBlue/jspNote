@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	window.onload = function(){
+		document.getElementById('frm').onsubmit = function(){
+			var num = Number(document.getElementsByName('num')[0].value);
+			
+			if( num <= 0 || Math.trunc(num)!=num || isNaN(num) ){
+				alert('자연수를 입력하세요');
+				return false;
+			}
+		};
+	};
+</script>
+</head>
+<body>
+	<h2>1부터 얼마까지 누적할지 자연수를 입력하세요</h2>
+	<form action="Ex2" method="get" id="frm">
+		<input type="text" name="num">
+		<input type="submit" value="누적결과">
+		
+	</form>
+</body>
+</html>

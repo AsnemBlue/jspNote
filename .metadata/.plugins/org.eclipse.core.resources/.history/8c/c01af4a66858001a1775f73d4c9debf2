@@ -1,0 +1,24 @@
+package com.tj.ex.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.tj.ex.dao.BoardDao;
+
+public class BListService implements Service {
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		String pageNum = request.getParameter("pageNum");
+		if(pageNum==null) {
+			pageNum="1";
+		}
+
+		final int PAGESIZE = 10, BLOCKSIZE = 10;
+		int currentPage = Integer.parseInt(pageNum);
+		int startrow = (currentPage - 1) *  PAGESIZE + 1;
+		int endrow	 = startrow + PAGESIZE - 1;
+		
+		BoardDao bDao = new BoardDao();
+		request.setAttribute("list", bDao.list(startrow, endrow));
+	}
+}

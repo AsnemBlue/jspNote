@@ -1,0 +1,23 @@
+package com.tj.ex.dao;
+
+import java.sql.Connection;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class MemberDao {
+	private static MemberDao instance = new MemberDao();
+	public static MemberDao getInstance() {
+		return instance;
+	}
+	private MemberDao() {}
+	private Connection getConnection() {
+		Connection conn = null;
+		try {
+			Context ctx = new InitialContext();
+		} catch (NamingException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

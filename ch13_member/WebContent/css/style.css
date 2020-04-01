@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+body { 
+	background-color: #87CEFA; 
+	font-size: 9pt;
+}
+table{ border: #4c6db0 solid 2px; margin: 10px auto; background-color:#6495ED;}
+tr {background-color: #87CEFA; }
+tr:HOVER {
+	background-color: #6495ED;
+	cursor: pointer;
+}
+td, th { text-align:center;  padding: 5px;}
+caption { font-size: 25px; }
+h2 {text-align: cetner; color:red;}
+a {text-decoration: none;}

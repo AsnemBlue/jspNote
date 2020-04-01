@@ -1,0 +1,8 @@
+package com.tj.ex.dto;
+
+public class a12 {
+	public static void main(String[] args) {
+		String 		bname     = "bname   ";
+		System.out.println(bname);
+	}
+}

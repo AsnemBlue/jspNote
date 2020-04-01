@@ -1,0 +1,20 @@
+#Tomcat publish data
+#Thu Feb 27 18:19:39 KST 2020
+org.eclipse.jst.jee.server\:ch10_bean=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch10_bean
+org.eclipse.jst.jee.server\:ch19_1=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch19_1
+org.eclipse.jst.jee.server\:ch12_db2=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch12_db2
+org.eclipse.jst.jee.server\:ch13_board=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch13_board
+org.eclipse.jst.jee.server\:ch08_session=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch08_session
+org.eclipse.jst.jee.server\:ch13_member=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch13_member
+org.eclipse.jst.jee.server\:ch19_2board=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch19_2board
+org.eclipse.jst.jee.server\:ch17_jstl=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch17_jstl
+org.eclipse.jst.jee.server\:ch19_mvc_member=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch19_mvc_member
+org.eclipse.jst.jee.server\:ch14_fileUp=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch14_fileUp
+org.eclipse.jst.jee.server\:ch16_forward=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch16_forward
+org.eclipse.jst.jee.server\:ch09_except=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch09_except
+org.eclipse.jst.jee.server\:prac=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\prac
+org.eclipse.jst.jee.server\:model1ex=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\model1ex
+org.eclipse.jst.jee.server\:ch18=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch18
+org.eclipse.jst.jee.server\:ch15_el=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch15_el
+org.eclipse.jst.jee.server\:ch11_dbI=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch11_dbI
+org.eclipse.jst.jee.server\:ch13=D\:\\mega_IT\\IDE\\apache-tomcat-9.0.30\\wtpwebapps\\ch13

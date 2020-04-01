@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+	<h2>개인정보 입력</h2>
+	<form action="step6.jsp">
+		<p>학번<input type="text" name="studentNum" required="required"></p>
+		<p>이름<input type="text" name="name" required="required"></p>
+		<p>학년<input type="number" name="grade" required="required"></p>
+		<p>반<select name="className">
+			<option>A</option>
+			<option>B</option>
+			<option>C</option>
+			</select>
+		</p>
+		<p>점수<input type="number" name="score" required="required"></p>
+		<input type="submit" value="입력"/>
+	</form>
+</body>
+</html>

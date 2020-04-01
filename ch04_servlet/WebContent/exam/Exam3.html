@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href='../css/exam3.css' rel='stylesheet'>
+<script>
+	function chk(){
+		var num = document.getElementsByName('num')[0];
+		var chknum = Number(frm.num.value);
+		if(isNaN(chknum) || chknum<=0){
+			alert("반드시 자연수를 입력하세요");
+			return false;
+			num.value='';
+		}
+	};
+</script>
+</head>
+<body>
+	<form action="http://localhost:8181/ch04_servlet/Exam3" method="get" onsubmit="return chk()" name="frm">
+		<fieldset>
+			<legend>누적하고 싶은 최종 수 입력</legend>
+			<table><tr>
+			<td><input type="number" name="num"></td>
+			<td><input type="submit" value="누적결과"></td>
+			</tr></table>
+		</fieldset>
+	</form>
+</body>
+</html>

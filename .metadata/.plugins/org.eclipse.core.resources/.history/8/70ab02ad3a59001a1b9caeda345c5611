@@ -1,0 +1,43 @@
+package com.tj.ex.service;
+
+import java.sql.Date;
+import java.util.Enumeration;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
+public class MJoinService implements Service {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		String path = request.getRealPath("member_photo");
+		int maxSize = 1024*1024; //1mb
+		try {
+			//mrequest 객체 생성후 파일이름 받아오기
+			MultipartRequest mRequest = new MultipartRequest(request, path, maxSize, "utf-8", new DefaultFileRenamePolicy());
+			Enumeration<String> params = mRequest.getFileNames();
+			String param = params.nextElement();
+			String mPhoto = mRequest.getFilesystemName(param);
+			mPhoto = mPhoto==null?"noimg.jpg" :mPhoto;
+			//파라미터값 다 받아오기->db에 넣기
+			String mId 			= mRequest.getParameter("mId"		);
+			String mPw 			= mRequest.getParameter("mPw"		);
+			String mName 		= mRequest.getParameter("mName"		);
+			String mEmail 		= mRequest.getParameter("mEmail"	);
+			String mBirthStr 	= mRequest.getParameter("mBirth"	);
+			String mAddress 	= mRequest.getParameter("mAddress"	);
+			Date mBirth = null;
+			if(!mBirthStr.equals("")) {
+				mBirth = Date.valueOf(mBirthStr);
+			}
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		} 
+		//업로드된 파일을 소스폴더로 복사
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.tj.ex.frontcontroller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+@WebServlet("*.do")
+public class FrontController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    public FrontController() {}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		actionDo(request, response);
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.getCharacterEncoding("utf-8");
+		actionDo(request, response);
+	}
+	protected void actionDo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+}

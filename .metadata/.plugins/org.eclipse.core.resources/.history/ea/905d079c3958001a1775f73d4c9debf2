@@ -1,0 +1,19 @@
+package com.tj.ex.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class MemberJoinService implements Service {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		String id 			= request.getParameter("id"			);
+		String pw 			= request.getParameter("pw"			);
+		String pwChk 		= request.getParameter("pwChk"		);
+		String name 		= request.getParameter("name"		);
+		String email 		= request.getParameter("email"		);
+		String tempbirth 	= request.getParameter("tempbirth"	);
+		String address 		= request.getParameter("address"	);
+	}
+
+}

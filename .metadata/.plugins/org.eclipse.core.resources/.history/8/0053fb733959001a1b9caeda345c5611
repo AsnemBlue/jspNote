@@ -1,0 +1,23 @@
+package com.tj.ex.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.oreilly.servlet.MultipartRequest;
+
+public class MJoinService implements Service {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		String path = request.getRealPath("member_photo");
+		int maxSize = 1024*1024; //1mb
+		String mPhoto = "";
+		MultipartRequest mRequest = null;
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

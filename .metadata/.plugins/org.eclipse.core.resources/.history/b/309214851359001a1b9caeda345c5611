@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+body{font-size:12px;}
+table{margin: 10px auto; background-color:#6495ED; width:1000px;}
+td, th { text-align:center;  padding: 10px;}
+caption { font-size: 25px; padding:10px; }
+h2  b{text-align: cetner; color:red;}
+a {text-decoration: none; color:black;}
+.paging{text-align: center;}            

@@ -1,0 +1,52 @@
+package com.tj.ex.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.tj.ex.service.Service;
+@WebServlet("*.do")
+public class BController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		actionDo(request, response);
+	}
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+		actionDo(request, response);
+	}
+	protected void actionDo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String uri = request.getRequestURI();
+		String conPath = request.getContextPath();
+		String command = uri.substring(conPath.length());
+		
+		Service service = null;
+		String viewPage = null;
+		
+		//글 목록
+		if(command.equals("/list.do")) { 
+			viewPage="board/list.jsp";
+		}//list.do
+		
+		//글쓰기
+		if(command.equals("/write_view.do")) {
+			viewPage="board/write_view.jsp";
+		}//write_viewwrite_view.do
+		
+		//글저장
+		if(command.equals("/write.do")) {
+			viewPage="list.do";
+		}//write.do
+		
+		//상세보기
+		if(command.equals("/content_view.do")) {
+			viewPage="board/content_view.jsp";
+		}//content_view.do
+	}//actionDo
+}

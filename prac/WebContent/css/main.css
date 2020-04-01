@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap');
+*{padding:0; margin:0; text-align:center;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif; }
+a{text-decoration: none; color:black; display:block;}
+li{list-style:none;}
+
+/* 주황색계열: 연->#fcc6a2  #f89b6c  #f37321 ->진 	네이비: #2b3f6b	연네이비: #7b8ea9 */
+
+header #searchlogin{
+    height: 50px; 
+    line-height:50px;
+    margin:0 auto;
+    background-color: #f89b6c;
+    width:100%;
+}
+header #searchlogin #searchWrap, header nav{
+    overflow:hidden;
+	width:1000px; margin:0 auto;
+	position:relative;
+}
+header #searchlogin #searchWrap #search{
+	width:310px;
+	float:left;
+	height:50px;
+	position:relative;
+}
+header #searchlogin #searchWrap #search input[type="text"]{
+	float:left;
+	height:30px; line-height:30px;
+	width:250px;
+	margin: 10px 0;
+	text-align: left;
+	font-size: 1.1em;
+	padding: 0 30px 0 20px;
+}
+header #searchlogin #searchWrap #search input[type="submit"]{
+	position:absolute;
+	right:15px; top:20px;
+	background: url(../img/search.png) no-repeat;
+	height:20px; width:20px;
+	border:0; outline: none;
+}
+header #searchlogin #searchWrap #search input[type="submit"]:hover{cursor: pointer;}
+header #searchlogin #searchWrap button {
+	float:right; 
+	background-color: #f89b6c;
+	outline: none; border:0;
+	padding:10px 5px 0px 5px;
+	display: block;
+}
+header #searchlogin #searchWrap button:hover{cursor: pointer;}
+header #searchlogin #searchWrap button img{
+	background-color: #f89b6c;
+	height:35px;
+	width:35px;
+}
+header nav #menu img{
+	height:35px;
+	width:35px;
+	float: left;
+}
+header nav #lineMenu li{
+	float:left;
+	width:250px;
+	height:35px;
+	line-height: 35px;
+	display: table-cell;
+}
+
+header #floatmenuWrap{
+	width:1000px; margin:0 auto;
+	position:relative;
+}
+header #floatmenuWrap #floatmenu{
+	width:200px; height:250px;
+	border:1px solid black;
+	box-sizing: border-box;
+	z-index: 100;
+	position:absolute;
+	right:0; top:-35px;
+	background-color: white;
+}
+header #floatmenuWrap #floatmenu ul li{
+	margin:10px;
+}
+#slideWrap {
+	width:1000px;
+	height:500px;
+	margin:0 auto;
+	z-index: 0;
+}

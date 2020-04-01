@@ -1,0 +1,14 @@
+package com.tj.ex.dao;
+
+import java.sql.Connection;
+
+public class MemberDao {
+	private static MemberDao instance = new MemberDao();
+	public static MemberDao getInstance() {
+		return instance;
+	}
+	private MemberDao() {}
+	private Connection getConnection() {
+		
+	}
+}
